@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="" class="calculator" name="form1">
+            <textarea type="text" class="value" name="ans" id="ans"></textarea>
+            <br><br>
+            <input type="button" class="num"  value=" 1 " onclick="a(1)">
+            <input type="button" class="num" value=" 2 " onclick="a(2)">
+            <input type="button" class="num" value=" 3 " onclick="a(3)">
+            <input type="button" class="num plus" value="  +   "  onclick="a('+')">
+            <br><br>
+            <input type="button" class="num"  value=" 4 " onclick="a(4)">
+            <input type="button" class="num" value=" 5 " onclick="a(5)">
+            <input type="button" class="num" value=" 6 " onclick="a(6)">
+            <input type="button" class="num" value="   -   " onclick="a('-')">
+            <br><br>
+            <input type="button" class="num" value=" 7 " onclick="a(7)">
+            <input type="button" class="num" value=" 8 " onclick="a(8)">
+            <input type="button" class="num" value=" 9 " onclick="a(9)">
+            <input type="button" class="num" value="   *   " onclick="a('*')">
+            <br><br>
+            <input type="button" class="num" value="  /  " onclick="a('/')">
+            <input type="button" class="num" value=" 0 " onclick="a(0)"> 
+            <input type="button" class="num" value=" . " onclick="a('.')">
+            <input type="submit" class="num" value="  %  " onclick="a('%')">
+            <br><br>
+            <input type="button" class="num clear" value=" Clear  All " onclick="clr()">
+            <input type="button" class="num equal" value="      =      " onclick="form1.ans.value=eval(form1.ans.value)">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
